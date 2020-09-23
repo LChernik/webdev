@@ -5,22 +5,25 @@ html {
 }
 
 .wrapper {
-    width: 1600px;
+    width: 1280px;
     margin: auto;
 }
 
 .promo_content {
-    width: 100%;
+    width: 1600px;
     background-image: url("assets/bg-image-wrapper.png");
     background-position: center;
     height: 744px;
+    margin: auto;
 }
 
 header {
+    width: 100%;
     height: 80px;
 }
 
 .header_navigation {
+    position: relative;
     width: 100%;
     height: 95px;
     padding: 0 auto;
@@ -28,8 +31,9 @@ header {
 }
 
 .header_navigation ul {
+    position: absolute;
     height: 100%;
-    margin: 0px 503px;
+    margin: 0px 343px;
     width: 583px;
 }
 
@@ -90,7 +94,8 @@ header {
 
 
 .intro {
-    width: 100%;
+    width: 1600px;
+    margin: auto;
 }
 
 .promo {
@@ -103,16 +108,16 @@ header {
 .promo_slogan {
     padding-top: 4px;
     padding-left: 9px;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 3.95em;
     color: white;
     letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .promo_text {
     margin-top: 30px;
     font-size: 1.13em;
-    font-weight: 200;
     color: white;
     line-height: 1.25em;
 }
@@ -140,6 +145,7 @@ header {
     cursor: pointer;
 }
 
+
 .contacts {
     display: flex;
     width: 170px;
@@ -158,8 +164,9 @@ header {
 
 
 .represent {
-    width: 100%;
+    width: 1600px;
     height: 722px;
+    margin: auto;
 } 
 
 .represent_div {
@@ -167,7 +174,7 @@ header {
     justify-content: space-between;
     width: 1062px;
     align-items: center;
-    margin: 120px 0px 0px 269px;
+    margin: 120px 0px 0px 108px;
 }
 .represent_text {
     width: 407px;
@@ -175,12 +182,17 @@ header {
 
 }
 
+.represent_text h2 {
+    margin-top: 2px;
+}
+
 .community_section {
-    width: 100%;
+    width: 1600px;
     height: 504px;
     background-color: #F5F6F7;
     overflow: hidden;
     white-space: nowrap;
+    margin: auto;
 }
 
 .community_div {
@@ -191,7 +203,7 @@ header {
     display: inline-block;
     vertical-align: top;
     margin-top: 155px;
-    margin-left: 269px;
+    margin-left: 110px;
 }
 
 .community_navigation {
@@ -234,7 +246,7 @@ header {
     opacity: 0.5;
     cursor: pointer;
 }
-#communityPics {
+.community_photos {
     display: flex;
     justify-content: space-between;
     width: 1281px;
@@ -242,13 +254,15 @@ header {
 }
 
 .implement_section {
+    width: 1600px;
     height: 842px;
     white-space: nowrap;
+    margin: auto;
 }
 
 .implement_section img {
-    margin-top: 120px;
-    margin-left: 269px;
+    margin-top: 121px;
+    margin-left: 110px;
 }
 
 .implement_div {
@@ -267,9 +281,10 @@ header {
 }
 
 .sign_up_section {
-    width: 100%;
+    width: 1600px;
     height: 598px;
     background-image: url("assets/pexels-christina-morillo.png");
+    margin: auto;
 }
 
 .sign_up_div {
@@ -288,41 +303,48 @@ header {
 }
 
 
-#signUpCheckDiv {
+.signup_form {
     display: inline-flex;
+    width: 406px;
+    height: 46px;
+    margin-right: 2px;
+}
+.email_box {
+    width: 340px;
+    border: none;
+    padding-left: 22.3px;
+    padding-right: 0;
+    color: #373737;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
 }
 
+
 .email_button {
-    width: 67px;
-    height: 48px;
+    width: 69px;
     box-shadow: none;
     border: none;
     background-color: #00AFDB;
 }
 
-.email_button :hover {
+.email_button:hover {
     cursor: pointer;
 }
 
-.email_box {
-    width: 316px;
-    height: 48px;
-    border: none;
-    padding: 0px 0px 0px 24px;
-    color: #373737;
-    font-size: 14px;
-    line-height: 140%;
-}
+
 
 .download_section {
+    width: 1600px;
     height: 468px;
+    margin: auto;
 }
 
 .download_text {
     width: 480px;
     text-align: center;
-    padding-top: 120px;
-    padding-left: 560px;
+    padding-top: 121px;
+    padding-left: 402px;
 }
 
 .download_text p {
@@ -332,82 +354,105 @@ header {
 .phone_button {
     background-color: #009CC2;
     width: 59px;
-    height: 46px;
+    height: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
     
 }
 
 .store_button {
-    width: 127px;
+    width: 129px;
+    margin: 0;
+    height: 49px;
+    padding-top: 4px;
+    padding-right: 5px;
     border: none;
 }
+
 
 .download_buttons {
     display: flex;
     justify-content: space-between;
     width: 402px;
-    margin: 0 auto;
+    margin: 0 35px 0 36px;
 }
 
-.download_buttons div {
+.download_button {
     display: inline-flex;
+    border: none;
+    margin-right: -2px;
+}
+
+.download_button  {
+    display: inline-flex;
+    border: none;
+}
+
+.download_button:hover  {
+    background: #009CC2;
+    cursor: pointer;
 }
 
 
 footer {
-    width: 100%;
+    width: 1600px;
     background-color: #000;
     height: 184px;
     white-space: nowrap;
+    margin: auto;
 }
 
 
-#footerNav {
+.footer_navigator {
     clear: both;
     position: relative;
     width: 235px;
     display: inline-block;
     position: absolute;
-    margin: 75px 0 0 160px;
+    margin-top: 77px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-#footerNav ul li {
+.footer_navigator ul li {
     height: 20px;
     text-align: center;
     display: inline;
-    font-size: 13px;
 }
 
-#footerNav a {
+.footer_navigator a {
     color: white;
+    text-decoration: none;
+    
 }
 
-#footerNav ul li:nth-child(2)::after, #footerNav ul li:nth-child(2)::before {
+.footer_navigator ul li:nth-child(2)::after, .footer_navigator ul li:nth-child(2)::before {
     content: "|";
     color: #4E4E4E;
-    font-size: 10px;
-    font-weight: bold;
-    margin: 0px 19px;
+    margin: 0px 17px;
 }
 
-#footerLogo {
+.footer_logo {
     display: inline-block;
     position: absolute;
-    margin: 60px 0 0 778px;
+    margin-top: 60px;
+    margin-left: 617px;;
 
 }
 
 footer p {
     display: inline-block;
     position: absolute;
-    margin: 73px 0 0 1270px;
+    margin: 74px 0 0 1111px;
 }
 
 p {
     font-size: 14px;
     line-height: 20px;
+    color: #373737;
+    font-weight: 400;
 }
 
 h2 {
@@ -415,6 +460,7 @@ h2 {
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 28px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -425,5 +471,5 @@ h3 {
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 500;
 }
